@@ -24,9 +24,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_game_n_management {
-            bindings = <&to 3>;
-            key-positions = <36 41>;
+        soft_off {
+            bindings = <&soft_off>;
+            key-positions = <2 9>;
         };
     };
 
@@ -67,6 +67,15 @@
 &none  &kp A         &kp S         &kp D         &kp F             &kp G             &none            &none         &none          &bt BT_CLR_ALL  &bt BT_CLR   &none
                                    &to 0         &kp LEFT_CONTROL  &kp LEFT_SHIFT    &bt BT_NXT       &bt BT_PRV    &to 0
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        game-n-management {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
