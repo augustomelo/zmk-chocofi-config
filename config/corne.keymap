@@ -25,19 +25,28 @@
 
         default {
             bindings = <
-&none  &kp Q               &kp W           &kp F           &kp P         &kp B        &kp J      &kp L              &kp U            &kp Y            &kp ESCAPE   &none
-&none  &ht LEFT_CONTROL A  &ht LEFT_ALT R  &ht LEFT_GUI S  &ht LSHIFT T  &kp G        &kp M      &ht RIGHT_SHIFT N  &ht RIGHT_GUI E  &ht RIGHT_ALT I  &ht RCTRL O  &none
-&none  &kp Z               &kp X           &kp C           &kp D         &kp V        &kp K      &kp H              &kp COMMA        &kp DOT          &kp FSLH     &none
+&none  &kp Q               &kp W           &kp F           &kp P         &kp B        &kp J      &kp L              &kp U            &kp Y            &kp ESCAPE     &none
+&none  &ht LEFT_CONTROL A  &ht LEFT_ALT R  &ht LEFT_GUI S  &ht LSHIFT T  &kp G        &kp M      &ht RIGHT_SHIFT N  &ht RIGHT_GUI E  &ht RIGHT_ALT I  &ht RCTRL O    &none
+&none  &kp Z               &kp X           &kp C           &kp D         &kp V        &kp K      &kp H              &kp COMMA        &kp DOT          &kp SEMICOLON  &none
                                            &trans          &kp DEL       &kp SPACE    &kp ENTER  &kp BACKSPACE      &to 1
             >;
         };
 
         numbers-frow-arrow {
             bindings = <
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &none
-&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none   &none
-&none  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp F11   &kp F12   &kp CAPS  &none      &none   &none
-                       &none   &none   &none      &none     &none     &to 0
+&none  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5       &kp N6     &kp N7         &kp N8    &kp N9     &kp N0  &none
+&none  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5       &kp LEFT   &kp DOWN       &kp UP    &kp RIGHT  &none   &none
+&none  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10      &kp F11    &kp F12        &kp CAPS  &kp TAB    &none   &none
+                       &to 0   &kp DEL  &kp SPACE    &kp ENTER  &kp BACKSPACE  &to 0
+            >;
+        };
+
+        symbols {
+            bindings = <
+&none  &kp EXCLAMATION   &kp AT_SIGN   &kp POUND  &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND    &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI   &kp LEFT_SHIFT  &none          &none      &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT         &kp RIGHT_CONTROL      &none
+&none  &kp MINUS         &kp EQUAL     &kp SLASH  &kp SQT         &kp GRAVE      &kp SLASH  &kp BACKSLASH    &trans         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none
+                                       &to 0      &kp DEL         &kp SPACE      &kp ENTER  &kp BACKSPACE    &to 0
             >;
         };
     };
