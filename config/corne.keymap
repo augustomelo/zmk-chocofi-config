@@ -44,10 +44,10 @@
 
         numbers-frow-arrow {
             bindings = <
-&none  &kp N1  &kp N2  &kp N3  &kp N4            &kp N5            &kp N6      &kp N7     &kp N8    &kp N9        &kp N0     &none
-&none  &kp F1  &kp F2  &kp F3  &kp F4            &kp F5            &none       &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none
-&none  &kp F6  &kp F7  &kp F8  &kp F9            &kp F10           &kp F11     &kp F12    &kp CAPS  &kp TAB       &none      &none
-                       &to 0   &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp RSHIFT  &kp RCTRL  &to 0
+&none  &kp N1  &kp N2  &kp N3  &kp N4        &kp N5       &kp N6     &kp N7         &kp N8    &kp N9        &kp N0     &none
+&none  &kp F1  &kp F2  &kp F3  &kp F4        &kp F5       &none      &kp LEFT       &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none
+&none  &kp F6  &kp F7  &kp F8  &kp F9        &kp F10      &kp F11    &kp F12        &kp TAB   &kp CAPSLOCK  &none      &none
+                       &to 0   &kp LEFT_GUI  &kp LCTRL    &kp RCTRL  &kp RIGHT_GUI  &to 0
             >;
         };
 
