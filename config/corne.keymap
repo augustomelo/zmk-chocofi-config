@@ -31,7 +31,7 @@
 &none  &kp Q               &kp W           &kp F           &kp P         &kp B        &kp J      &kp L              &kp U            &kp Y            &kp BACKSPACE  &none
 &none  &ht LEFT_CONTROL A  &ht LEFT_ALT R  &ht LEFT_GUI S  &ht LSHIFT T  &kp G        &kp K      &ht RIGHT_SHIFT N  &ht RIGHT_GUI E  &ht RIGHT_ALT I  &ht RCTRL O    &none
 &none  &kp Z               &kp X           &kp C           &kp D         &kp V        &kp M      &kp H              &kp COMMA        &kp DOT          &kp SEMICOLON  &none
-                                           &kp CAPSLOCK    &kp ENTER     &lt 1 DEL    &lt 2 ESC  &kp SPACE          &kp TAB
+                                           &kp TAB         &kp ENTER     &lt 1 DEL    &lt 2 ESC  &kp SPACE          &kp TAB
             >;
         };
 
