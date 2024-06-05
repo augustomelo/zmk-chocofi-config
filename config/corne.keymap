@@ -28,28 +28,28 @@
 
         default {
             bindings = <
-&none  &kp Q               &kp W           &kp F           &kp P         &kp B        &kp J      &kp L              &kp U            &kp Y            &kp BACKSPACE  &none
-&none  &ht LEFT_CONTROL A  &ht LEFT_ALT R  &ht LEFT_GUI S  &ht LSHIFT T  &kp G        &kp K      &ht RIGHT_SHIFT N  &ht RIGHT_GUI E  &ht RIGHT_ALT I  &ht RCTRL O    &none
-&none  &kp Z               &kp X           &kp C           &kp D         &kp V        &kp M      &kp H              &kp COMMA        &kp DOT          &kp SEMICOLON  &none
-                                           &kp TAB         &kp ENTER     &lt 1 DEL    &lt 2 ESC  &kp SPACE          &kp CAPS
+&none  &kp Q        &kp W       &kp F       &kp P         &kp B        &kp J      &kp L         &kp U       &kp Y       &kp BACKSPACE  &none
+&none  &ht LCTRL A  &ht LALT R  &ht LGUI S  &ht LSHIFT T  &kp G        &kp K      &ht RSHIFT N  &ht RGUI E  &ht RALT I  &ht RCTRL O    &none
+&none  &kp Z        &kp X       &kp C       &kp D         &kp V        &kp M      &kp H         &kp COMMA   &kp DOT     &kp SEMICOLON  &none
+                                &kp TAB     &kp ENTER     &lt 1 DEL    &lt 2 ESC  &kp SPACE     &kp CAPS
             >;
         };
 
         numbers-n-symbols {
             bindings = <
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &none   &kp FSLH   &kp APOS   &kp GRAVE  &kp BSLH  &none
-&none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &none   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &none
-&none  &none   &none   &none   &none   &none     &none   &none      &none      &none      &none     &none
-                       &none   &none   &trans    &trans  &kp RSHFT  &kp RCTRL
+&none  &kp N1        &kp N2       &kp N3       &kp N4        &kp N5    &none   &kp FSLH          &kp APOS        &kp GRAVE              &kp BSLH                 &none
+&none  &ht LCTRL N6  &ht LALT N7  &ht LGUI N8  &ht LSHFT N9  &kp N0    &none   &ht RSHIFT MINUS  &ht RGUI EQUAL  &ht RALT LEFT_BRACKET  &ht RCTRL RIGHT_BRACKET  &none
+&none  &none         &none        &none        &none         &none     &none   &none             &none           &none                  &none                    &none
+                                  &none        &none         &trans    &trans  &none             &none
             >;
         };
 
         frow-n-naviation {
             bindings = <
-&none  &kp F1   &kp F2   &kp F3     &kp F4    &kp F5     &none   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
-&none  &kp F6   &kp F7   &kp F8     &kp F9    &kp F10    &none   &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none
-&none  &kp F11  &kp F12  &kp LCTRL  &kp LALT  &none      &none   &none     &none          &none        &kp ENTER  &none
-                         &none      &none     &trans     &trans  &none     &none
+&none  &kp F1        &kp F2       &kp F3       &kp F4        &kp F5     &none   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+&none  &ht LCTRL F6  &ht LALT F7  &ht LGUI F8  &ht LSHFT F9  &kp F10    &none   &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none
+&none  &kp F11       &kp F12      &none        &none         &none      &none   &none     &none          &none        &none      &none
+                                  &none        &kp ENTER     &trans     &trans  &none     &none
             >;
         };
 
