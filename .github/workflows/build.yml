@@ -1,13 +1,42 @@
 name: Build user config
 on:
   push:
-    paths-ignore:
-      - 'README.md'
+    paths:
+      - "boards/**"
+      - "config/**"
+      - "zephyr/**"
+      - build.yaml
   pull_request:
-    paths-ignore:
-      - 'README.md'
+    paths:
+      - "boards/**"
+      - "config/**"
+      - "zephyr/**"
+      - build.yaml
   workflow_dispatch:
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  draw-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pipx and dependecies
+        uses: liskin/gh-pipx@v1
+        with:
+          packages: keymap-drawer
+
+      - name: Run keymap and draw layout
+        run: |
+          keymap parse --columns 1 --zmk-keymap ./config/corne.keymap > corne.yaml
+          keymap draw corne.yaml > layout.svg
+
+      - name: Commit laoyout
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add layout.svg
+          git commit --message "Automated layout"
+          git push
