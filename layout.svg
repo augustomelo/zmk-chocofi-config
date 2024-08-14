@@ -82,6 +82,10 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.layer-activator {
+    text-decoration: underline;
+}
+
 /* styling for hold/shifted label text in combo box */
 text.combo.hold, text.combo.shifted {
     font-size: 8px;
@@ -113,7 +117,7 @@ path.combo {
 /* End Tabler Icons Cleanup */
 </style>
 <g transform="translate(30, 0)" class="layer-default">
-<text x="0" y="28" class="label">default:</text>
+<text x="0" y="28" class="label" id="default">default:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -271,26 +275,26 @@ path.combo {
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">DEL</text>
-<text x="0" y="38" class="key hold"><tspan style="font-size: 64%">numbers-n-…</tspan></text>
-</g>
+<a href="#numbers-n-symbols">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">numbers-n-…</tspan></text>
+</a></g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<text x="0" y="0" class="key tap">ESC</text>
-<text x="0" y="38" class="key hold"><tspan style="font-size: 64%">frow-n-nav…</tspan></text>
-</g>
+<a href="#frow-n-naviation">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">frow-n-nav…</tspan></text>
+</a></g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">CAPS</text>
+<text x="0" y="0" class="key tap">ESC</text>
 </g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-numbers-n-symbols">
-<text x="0" y="28" class="label">numbers-n-symbols:</text>
+<text x="0" y="28" class="label" id="numbers-n-symbols">numbers-n-symbols:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -448,7 +452,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(30, 661)" class="layer-frow-n-naviation">
-<text x="0" y="28" class="label">frow-n-naviation:</text>
+<text x="0" y="28" class="label" id="frow-n-naviation">frow-n-naviation:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -573,9 +577,11 @@ path.combo {
 </g>
 <g transform="translate(588, 147)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">DEL</text>
 </g>
 <g transform="translate(644, 140)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">CAPS</text>
 </g>
 <g transform="translate(700, 147)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -608,7 +614,7 @@ path.combo {
 </g>
 </g>
 <g transform="translate(30, 992)" class="layer-game-n-management">
-<text x="0" y="28" class="label">game-n-management:</text>
+<text x="0" y="28" class="label" id="game-n-management">game-n-management:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
