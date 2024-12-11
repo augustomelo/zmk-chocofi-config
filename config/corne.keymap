@@ -28,10 +28,10 @@
 
         default {
             bindings = <
-&none  &kp Q        &kp W       &kp F       &kp P         &kp B    &kp J  &kp L         &kp U       &kp Y       &kp BACKSPACE  &none
-&none  &ht LCTRL A  &ht LALT R  &ht LGUI S  &ht LSHIFT T  &kp G    &kp K  &ht RSHIFT N  &ht RGUI E  &ht RALT I  &ht RCTRL O    &none
-&none  &kp Z        &kp X       &kp C       &kp D         &kp V    &kp M  &kp H         &kp COMMA   &kp DOT     &kp SEMICOLON  &none
-                                &kp TAB     &kp ENTER     &mo 1    &mo 2  &kp SPACE     &kp ESC
+&none  &kp Q        &kp W       &kp F                     &kp P         &kp B    &kp J  &kp L         &kp U       &kp Y       &kp BACKSPACE  &none
+&none  &ht LCTRL A  &ht LALT R  &ht LGUI S                &ht LSHIFT T  &kp G    &kp K  &ht RSHIFT N  &ht RGUI E  &ht RALT I  &ht RCTRL O    &none
+&none  &kp Z        &kp X       &kp C                     &kp D         &kp V    &kp M  &kp H         &kp COMMA   &kp DOT     &kp SEMICOLON  &none
+                                &ht LC(LA(LS(LGUI))) TAB  &kp ENTER     &mo 1    &mo 2  &kp SPACE     &kp ESC
             >;
         };
 
