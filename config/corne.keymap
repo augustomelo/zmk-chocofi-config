@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -57,10 +58,10 @@
 
         game-n-management {
             bindings = <
-  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &none   &kp C_VOL_UP  &kp C_PLAY   &bt BT_PRV       &bt BT_NXT
-  &kp Q         &kp W         &kp E         &kp R         &kp T     &none   &kp C_VOL_DN  &kp C_PAUSE  &kp PRINTSCREEN  &kp INSERT
-  &kp A         &kp S         &kp D         &kp F         &kp G     &none   &kp K_MUTE    &none        &bt BT_CLR       &bt BT_CLR_ALL
-                              &none         &none         &trans    &trans  &none         &none
+  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &none   &kp C_VOL_UP  &kp C_PLAY    &bt BT_PRV       &bt BT_NXT
+  &kp Q         &kp W         &kp E         &kp R         &kp T     &none   &kp C_VOL_DN  &kp C_PAUSE   &kp PRINTSCREEN  &kp INSERT
+  &kp A         &kp S         &kp D         &kp F         &kp G     &none   &kp K_MUTE    &none         &bt BT_CLR       &bt BT_CLR_ALL
+                              &none         &none         &trans    &trans  &out OUT_BLE  &out OUT_USB
             >;
         };
     };
