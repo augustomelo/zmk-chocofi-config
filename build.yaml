@@ -18,8 +18,8 @@
 #
 # https://nicekeyboards.com/docs/nice-view/getting-started/
 ---
-include:
-  - board: nice_nano_v2
-    shield: corne_left
-  - board: nice_nano_v2
-    shield: corne_right
+board: 
+  - nice_nano_v2
+shield:
+  - corne_left
+  - corne_right
