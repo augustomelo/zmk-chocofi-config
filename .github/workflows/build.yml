@@ -33,12 +33,16 @@ jobs:
           keymap parse --columns 1 --zmk-keymap ./config/corne.keymap > corne.yaml
           keymap draw corne.yaml > layout.svg
 
-      - name: Commit laoyout
+      - name: Check if layout.svg changed
+        id: check_diff
         run: |
-          if [[ $(git status --porcelain) ]]; then
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git config user.name "github-actions[bot]"
-            git add layout.svg
-            git commit --message "Automated layout"
-            git push
-          fi
+          git diff --quiet layout.svg || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit laoyout
+        if: steps.check_diff.outputs.changed == 'true'
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add layout.svg
+          git commit --message "docs: update layout.svg"
+          git push
