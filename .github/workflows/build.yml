@@ -35,8 +35,10 @@ jobs:
 
       - name: Commit laoyout
         run: |
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config user.name "github-actions[bot]"
-          git add layout.svg
-          git commit --message "Automated layout"
-          git push
+          if [[ $(git status --porcelain) ]]; then
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config user.name "github-actions[bot]"
+            git add layout.svg
+            git commit --message "Automated layout"
+            git push
+          fi
