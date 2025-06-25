@@ -15,7 +15,6 @@
     behaviors {
         ht: hold-tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "hold-tap";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
