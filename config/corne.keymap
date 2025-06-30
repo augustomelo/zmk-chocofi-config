@@ -41,7 +41,7 @@
             bindings = <
   &kp N1        &kp N2       &kp N3       &kp N4        &none     &none   &kp FSLH          &kp APOS        &kp GRAVE              &kp BSLH
   &ht LCTRL N5  &ht LALT N6  &ht LGUI N7  &ht LSHFT N8  &none     &none   &ht RSHIFT MINUS  &ht RGUI EQUAL  &ht RALT LEFT_BRACKET  &ht RCTRL RIGHT_BRACKET
-  &none         &none        &kp N9       &kp N0        &none     &none   &none             &none           &none                  &none
+  &none         &none        &kp N9       &kp N0        &none     &none   &none             &kp COMMA       &kp PERIOD             &kp SEMICOLON
                              &none        &none         &trans    &trans  &none             &none
             >;
         };
