@@ -47,10 +47,10 @@
 
         default {
             bindings = <
-  &kp Q         &kp W        &kp F                      &kp P          &kp B    &kp J  &kp L          &kp U        &kp Y        &kp BACKSPACE
-  &hml LCTRL A  &hml LALT R  &hml LGUI S                &hml LSHIFT T  &kp G    &kp M  &hmr RSHIFT N  &hmr RGUI E  &hmr RALT I  &hmr RCTRL O
-  &kp Z         &kp X        &kp C                      &kp D          &kp V    &kp K  &kp H          &kp COMMA    &kp DOT      &kp SEMICOLON
-                             &hml LC(LA(LS(LGUI))) TAB  &kp ENTER      &mo 1    &mo 2  &kp SPACE      &kp ESC
+  &kp Q         &kp W        &kp F                      &kp P          &kp B    &kp J  &kp L          &kp U                      &kp Y        &kp BACKSPACE
+  &hml LCTRL A  &hml LALT R  &hml LGUI S                &hml LSHIFT T  &kp G    &kp M  &hmr RSHIFT N  &hmr RGUI E                &hmr RALT I  &hmr RCTRL O
+  &kp Z         &kp X        &kp C                      &kp D          &kp V    &kp K  &kp H          &kp COMMA                  &kp DOT      &kp SEMICOLON
+                             &hml LC(LA(LS(LGUI))) TAB  &kp ENTER      &mo 1    &mo 2  &kp SPACE      &hmr RC(RA(RS(RGUI))) ESC
             >;
         };
 
@@ -65,10 +65,10 @@
 
         frow-n-naviation {
             bindings = <
-  &kp F1         &kp F2        &kp F3        &kp F4         &none     &none   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END
-  &hml LCTRL F5  &hml LALT F6  &hml LGUI F7  &hml LSHFT F8  &none     &none   &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT
-  &kp F9         &kp F10       &kp F11       &kp F12        &none     &none   &kp DEL   &kp CAPS       &none        &none
-                               &none         &none          &trans    &trans  &none     &none
+  &kp F1         &kp F2        &kp F3        &kp F4         &none     &none   &kp HOME                &kp PAGE_DOWN   &kp PAGE_UP   &kp END
+  &hml LCTRL F5  &hml LALT F6  &hml LGUI F7  &hml LSHFT F8  &none     &none   &hmr LSHIFT LEFT_ARROW  &hmr RGUI DOWN  &hmr RALT UP  &hmr RCTRL RIGHT
+  &kp F9         &kp F10       &kp F11       &kp F12        &none     &none   &kp DEL                 &kp CAPS        &none         &none
+                               &none         &none          &trans    &trans  &none                   &none
             >;
         };
 
