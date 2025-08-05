@@ -30,7 +30,7 @@ jobs:
 
       - name: Run keymap and draw layout
         run: |
-          keymap parse --columns 1 --zmk-keymap ./config/chocofi.conf > mapping.yaml
+          keymap parse --columns 1 --zmk-keymap ./config/chocofi.keymap > mapping.yaml
           keymap draw mapping.yaml > layout.svg
 
       - name: Check if layout.svg changed
