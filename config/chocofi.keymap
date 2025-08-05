@@ -10,8 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    chosen { zmk,matrix_transform = &five_column_transform; };
-
     behaviors {
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
@@ -39,8 +37,6 @@
             hold-trigger-on-release;
         };
     };
-
-    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
