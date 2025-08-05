@@ -1,3 +1,5 @@
+# https://zmk.dev/docs/config
+
 if SHIELD_CHOCOFI_DONGLE
 
 config BT_MAX_CONN
@@ -39,12 +41,5 @@ config ZMK_SLEEP
 
 config ZMK_IDLE_SLEEP_TIMEOUT
     default 3600000
-
-endif
-
-if SHIELD_CHOCOFI_DONGLE || SHIELD_CHOCOFI_LEFT || SHIELD_CHOCOFI_RIGHT
-
-config BT_CTLR_TX_PWR_PLUS_8
-    default y
 
 endif
