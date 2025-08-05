@@ -30,8 +30,8 @@ jobs:
 
       - name: Run keymap and draw layout
         run: |
-          keymap parse --columns 1 --zmk-keymap ./config/corne.keymap > corne.yaml
-          keymap draw corne.yaml > layout.svg
+          keymap parse --columns 1 --zmk-keymap ./config/chocofi.conf > mapping.yaml
+          keymap draw mapping.yaml > layout.svg
 
       - name: Check if layout.svg changed
         id: check_diff
