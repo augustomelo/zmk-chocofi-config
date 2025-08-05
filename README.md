@@ -1,4 +1,4 @@
-# zmk-chocofi-config
+# zmk-config-chocofi
 
 The configuration on this repository is edited using: [keymap-editor](https://nickcoutsos.github.io/keymap-editor/); and the image layout is drawn using [keymap-drawer](https://keymap-drawer.streamlit.app/) (automatically draws it using GitHub actions).
 
