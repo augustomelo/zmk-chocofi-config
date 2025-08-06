@@ -45,4 +45,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git add ./images/layout.svg
           git commit --message "docs: update layout.svg"
-          git push
+          git push origin $GITHUB_REF_NAME
