@@ -25,6 +25,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Swith to correnct branch
+        if: github.event_name == 'pull_request'
+        run: |
+          git switch ${{ github.head_ref }}
+
       - name: Install pipx and dependecies
         uses: liskin/gh-pipx@v1
         with:
