@@ -22,6 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Swith to correnct branch
+        if: github.event_name == 'pull_request'
+        run: |
+          git switch ${{ github.head_ref }}
 
       - name: Install pipx and dependecies
         uses: liskin/gh-pipx@v1
@@ -30,19 +37,19 @@ jobs:
 
       - name: Run keymap and draw layout
         run: |
-          keymap parse --columns 1 --zmk-keymap ./config/corne.keymap > corne.yaml
-          keymap draw corne.yaml > layout.svg
+          keymap parse --columns 1 --zmk-keymap ./config/chocofi.keymap > mapping.yaml
+          keymap draw mapping.yaml > ./images/layout.svg
 
       - name: Check if layout.svg changed
         id: check_diff
         run: |
-          git diff --quiet layout.svg || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet ./images/layout.svg || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit laoyout
         if: steps.check_diff.outputs.changed == 'true'
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add layout.svg
+          git add ./images/layout.svg
           git commit --message "docs: update layout.svg"
-          git push
+          git push origin
