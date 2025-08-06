@@ -6,12 +6,6 @@ on:
       - "config/**"
       - "zephyr/**"
       - build.yaml
-  pull_request:
-    paths:
-      - "boards/**"
-      - "config/**"
-      - "zephyr/**"
-      - build.yaml
   workflow_dispatch:
 
 jobs:
@@ -45,4 +39,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git add ./images/layout.svg
           git commit --message "docs: update layout.svg"
-          git push origin $GITHUB_REF_NAME
+          git push
