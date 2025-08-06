@@ -22,6 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        fetch-depth: ''
 
       - name: Install pipx and dependecies
         uses: liskin/gh-pipx@v1
@@ -45,4 +46,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git add ./images/layout.svg
           git commit --message "docs: update layout.svg"
-          git push origin ${{ github.head_ref || github.ref_name }}
+          git push origin
