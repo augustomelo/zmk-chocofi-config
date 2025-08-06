@@ -66,12 +66,12 @@
             >;
         };
 
-        game-n-management {
+        media {
             bindings = <
-  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &none   &kp C_VOL_UP  &kp C_PLAY   &none            &none
-  &kp Q         &kp W         &kp E         &kp R         &kp T     &none   &kp C_VOL_DN  &kp C_PAUSE  &kp PRINTSCREEN  &kp INSERT
-  &kp A         &kp S         &kp D         &kp F         &kp G     &none   &kp K_MUTE    &none        &none            &none
-                              &none         &none         &trans    &trans  &none         &none
+  &none  &none  &none  &none  &none     &none   &kp C_VOL_UP  &kp C_PLAY   &none            &none
+  &none  &none  &none  &none  &none     &none   &kp C_VOL_DN  &kp C_PAUSE  &kp PRINTSCREEN  &kp INSERT
+  &none  &none  &none  &none  &none     &none   &kp K_MUTE    &none        &none            &none
+                &none  &none  &trans    &trans  &none         &none
             >;
         };
     };
@@ -79,7 +79,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        game-n-management {
+        media-layer {
             if-layers = <1 2>;
             then-layer = <3>;
         };
