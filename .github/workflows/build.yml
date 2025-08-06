@@ -36,7 +36,7 @@ jobs:
       - name: Check if layout.svg changed
         id: check_diff
         run: |
-          git diff --quiet layout.svg || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet ./images/layout.svg || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit laoyout
         if: steps.check_diff.outputs.changed == 'true'
