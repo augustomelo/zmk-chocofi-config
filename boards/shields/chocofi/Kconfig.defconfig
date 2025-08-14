@@ -2,12 +2,6 @@
 
 if SHIELD_CHOCOFI_DONGLE
 
-config BT_MAX_CONN
-    default 2
-
-config BT_MAX_PAIRED
-    default 2
-
 config ZMK_KEYBOARD_NAME
     default "chocofi"
 
