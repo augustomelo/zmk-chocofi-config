@@ -34,7 +34,7 @@ config ZMK_BLE
 	default y
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+    default n
 
 config ZMK_SLEEP
     default y
