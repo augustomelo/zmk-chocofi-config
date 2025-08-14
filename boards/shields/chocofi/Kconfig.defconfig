@@ -2,6 +2,9 @@
 
 if SHIELD_CHOCOFI_DONGLE
 
+config ZMK_BLE
+	default y
+
 config ZMK_KEYBOARD_NAME
     default "chocofi"
 
@@ -21,10 +24,10 @@ endif
 
 if SHIELD_CHOCOFI_LEFT || SHIELD_CHOCOFI_RIGHT
 
-config ZMK_SPLIT
+config ZMK_BLE
 	default y
 
-config ZMK_BLE
+config ZMK_SPLIT
 	default y
 
 config ZMK_SPLIT_ROLE_CENTRAL
