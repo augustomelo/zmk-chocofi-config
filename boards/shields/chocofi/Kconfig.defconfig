@@ -1,0 +1,42 @@
+# https://zmk.dev/docs/config
+
+if SHIELD_CHOCOFI_DONGLE
+
+config ZMK_BLE
+	default y
+
+config ZMK_KEYBOARD_NAME
+    default "chocofi"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config ZMK_USB
+	default y
+
+endif
+
+if SHIELD_CHOCOFI_LEFT || SHIELD_CHOCOFI_RIGHT
+
+config ZMK_BLE
+	default y
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+config ZMK_SLEEP
+    default y
+
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 3600000
+
+endif
